@@ -6,3 +6,7 @@ class FundraiserSerializer(serializers.ModelSerializer):
         model = apps.get_model('fundraisers.Fundraiser')
         fields = '__all__'
         
+class PledgeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = apps.get_model('fundraisers.Pledge')
+        fields = '__all__'
