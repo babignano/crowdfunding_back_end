@@ -1,41 +1,33 @@
-# Crowdfunding Back End - SIMPLE Example
-Biagio Abignano
+# Crowdfunding Back End
+Caterina Lopez
 
 ## Planning:
 ### Concept/Name
-**HelpMeOut** - A simple crowdfunding platform where people can ask for help funding their projects and others can pledge to support them.
+Dance-fanstatic-raise (for now) will be a crowdfunding website to support performaners and sporting groups with their specific goals..
 
 ### Intended Audience/User Stories
-People who need money for projects and people who want to help fund good ideas.
+Performaners and sporting groups.....
 
-- As a creator, I want to post my project idea and funding goal
-- As a supporter, I want to see projects and pledge money to ones I like
-- As a user, I want to log in so my pledges and projects are tracked
+- As a user I can see a list of fundraisers on the homepage?
+- As a user I can login to the website and see my profile
+- As a user I can see an individual fundrasiers
+- As a user I can see photos and/or videos of the fundrasier
+- As a user I can comment on a fundraiser
 
 ### Front End Pages/Functionality
-- **Home**
-    - List all fundraisers
-    - Click to view details
-- **Fundraiser Details**
-    - See full info and all pledges
-    - Make a pledge if logged in
-- **Create Fundraiser**
-    - Form to create new fundraiser (login required)
-- **Login/Signup**
-    - Create account or login
+- Homepage
+    - User Details
+    - List Fundraisers
+        - Individual Fundraiser
 
 ### API Spec
 
 | URL | HTTP Method | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
 | --- | ----------- | ------- | ------------ | --------------------- | ---------------------------- |
-| /fundraisers/ | GET | Get all fundraisers | N/A | 200 | None |
-| /fundraisers/ | POST | Create fundraiser | Fundraiser object | 201 | Logged in |
-| /fundraisers/1/ | GET | Get one fundraiser (with pledges) | N/A | 200 | None |
-| /pledges/ | GET | Get all pledges | N/A | 200 | None |
-| /pledges/ | POST | Create pledge | Pledge object | 201 | Logged in |
+| /fundraisers/ | GET |Return all fundraisers| N/A |200|N/A|
+| /fundraisers/ | POST |Create a new fundraiser|Fundraiser object|201|Must be logged in|
+| /fundraisers/:id | GET |Return fundraiser by ID|N/A|200|N/A|
+| /fundraisers/:id | PUT |Update a fundraiser|Fundraiser object|20|Must be logged in and the owner|
 
 ### DB Schema
-
-**Users** → **Fundraisers** (one user owns many fundraisers)
-**Users** → **Pledges** (one user makes many pledges)
-**Fundraisers** → **Pledges** (one fundraiser has many pledges)
+![]( {{ ./relative/path/to/your/schema/image.png }} )
