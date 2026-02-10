@@ -13,6 +13,7 @@ Performaners and sporting groups.....
 - As a user I can see an individual fundrasiers
 - As a user I can see photos and/or videos of the fundrasier
 - As a user I can comment on a fundraiser
+![take-a-break-break](https://github.com/user-attachments/assets/87a8b2b8-3b7a-42b8-84f1-03e27d5a2b4c)
 
 ### Front End Pages/Functionality
 - Homepage
